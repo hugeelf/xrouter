@@ -1,0 +1,51 @@
+$siteWidth: 1200px;
+$colorBlackText: #292F36;
+$colorWhite: #fff;
+$colorActive: #F4F0EC;
+$colorGold: #CDA274;
+$colorGray: #E7E7E7;
+$fontFamilyDM: 'DM Serif Display', serif;
+$fontFamilyJost: 'Jost', sans-serif;
+
+//default styles
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $colorBlackText;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.button_main {
+    height: 52px;
+    width: 52px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: $colorWhite;
+    }
+}
+
+.center {
+    max-width: $siteWidth;
+    margin: 0 auto;
+}
