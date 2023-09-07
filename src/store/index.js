@@ -52,29 +52,29 @@ export default new Vuex.Store({
       },
     ],
 
-    news: [
-      {
-        id: 1,
-        newsImg: "./img/news_1.jpg",
-        newsCategory: "Kitchan Design",
-        newsTitle: "Let’s Get Solution For Building Construction Work",
-        newsDate: "26 December,2022",
-      },
-      {
-        id: 2,
-        newsImg: "./img/news_2.jpg",
-        newsCategory: "Kitchan Design",
-        newsTitle: "Let’s Get Solution For Building Construction Work",
-        newsDate: "26 December,2022",
-      },
-      {
-        id: 3,
-        newsImg: "./img/news_3.jpg",
-        newsCategory: "Kitchan Design",
-        newsTitle: "Let’s Get Solution For Building Construction Work",
-        newsDate: "26 December,2022",
-      },
-    ],
+    // news: [
+    //   {
+    //     id: 1,
+    //     newsImg: "./img/news_1.jpg",
+    //     newsCategory: "Kitchan Design",
+    //     newsTitle: "Let’s Get Solution For Building Construction Work",
+    //     newsDate: "26 December,2022",
+    //   },
+    //   {
+    //     id: 2,
+    //     newsImg: "./img/news_2.jpg",
+    //     newsCategory: "Kitchan Design",
+    //     newsTitle: "Let’s Get Solution For Building Construction Work",
+    //     newsDate: "26 December,2022",
+    //   },
+    //   {
+    //     id: 3,
+    //     newsImg: "./img/news_3.jpg",
+    //     newsCategory: "Kitchan Design",
+    //     newsTitle: "Let’s Get Solution For Building Construction Work",
+    //     newsDate: "26 December,2022",
+    //   },
+    // ],
 
     socialLinks: [
       {
@@ -90,6 +90,61 @@ export default new Vuex.Store({
         img: "./img/linkedin.svg",
       },
     ],
+
+    post: {
+      id: 1,
+      title: "Low Cost Latest Invented Interior Designing Ideas",
+      shortDescription:
+        "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.",
+      mainThing:
+        "Lorem Ipsum is not simply random text. It has roots in a piece of classica.",
+      date: "26 December,2022 ",
+    },
+
+    news: [
+                {
+                    id: 1,
+                    newsImg: "./img/news_1.jpg",
+                    newsCategory: "Kitchan Design",
+                    newsTitle: "Let’s Get Solution For Building Construction Work",
+                    newsDate: "26 December,2022 ",
+                },
+                {
+                    id: 2,
+                    newsImg: "./img/news_2.jpg",
+                    newsCategory: "Living Design",
+                    newsTitle: "Low Cost Latest Invented Interior Designing Ideas",
+                    newsDate: "22 December,2022 ",
+                },
+                {
+                    id: 3,
+                    newsImg: "./img/news_3.jpg",
+                    newsCategory: "Interior Design",
+                    newsTitle: "Best For Any Office & Business Interior Solution",
+                    newsDate: "25 December,2022 ",
+                },
+                {
+                    id: 4,
+                    newsImg: "./img/news_4.jpg",
+                    newsCategory: "Kitchan Design",
+                    newsTitle: "Let’s Get Solution For Building Construction Work",
+                    newsDate: "26 December,2022 ",
+                },
+                {
+                    id: 5,
+                    newsImg: "./img/news_5.jpg",
+                    newsCategory: "Living Design",
+                    newsTitle: "Low Cost Latest Invented Interior Designing Ideas",
+                    newsDate: "22 December,2022 ",
+                },
+                {
+                    id: 6,
+                    newsImg: "./img/news_6.jpg",
+                    newsCategory: "Interior Design",
+                    newsTitle: "Best For Any Office & Business Interior Solution",
+                    newsDate: "25 December,2022 ",
+                },
+            ],
   },
   getters: {},
   mutations: {},

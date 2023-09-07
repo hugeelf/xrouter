@@ -7,12 +7,12 @@
             points of using.
         </p>
         <div class="news-place">
-            <div class="news-place__element single-news" v-for="singleNews in news" :key="singleNews.id">
+            <div class="news-place__element single-news" v-for="singleNews in newsPart" :key="singleNews.id">
                 <div class="single-news__visual">
                     <img :src='singleNews.newsImg' alt="news img" class="single-news__img" />
-                    <button class="button single-news__button">
+                    <router-link to="articles" class="button single-news__button">
                         {{ singleNews.newsCategory }}
-                    </button>
+                    </router-link>
                 </div>
                 <h4 class="single-news__title">
                     {{ singleNews.newsTitle }}
@@ -51,7 +51,10 @@ export default {
 
     },
     computed: {
-        ...mapState(['news'])
+        ...mapState(['news']),
+        newsPart(){
+            return this.news.slice(0,3);
+        }
     }
 };
 </script>
