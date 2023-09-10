@@ -12,12 +12,12 @@
                         <h4 class="project__name"> {{ project.projectName }} </h4>
                         <div class="project__description"> {{ project.projectCategory }} </div>
                     </div>
-                    <button class="button project__button">
+                    <router-link to="slider" class="button project__button">
                         <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </button>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -128,4 +128,5 @@ export default {
         border: 1px solid transparent;
         background-color: #F4F0EC;
     }
-}</style>
+}
+</style>

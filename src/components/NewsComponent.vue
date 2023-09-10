@@ -19,12 +19,12 @@
                 </h4>
                 <div class="single-news__info">
                     <p class="single-news__date">{{ singleNews.newsDate }}</p>
-                    <button class="button project__button single-news__more-button">
+                    <router-link to="slider" class="button project__button single-news__more-button">
                         <svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 19L9 10L1 1" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
-                    </button>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -151,8 +151,7 @@ export default {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
+    } 
 
-    
-
-}</style>
+}
+</style>

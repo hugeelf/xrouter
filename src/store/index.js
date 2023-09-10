@@ -145,9 +145,42 @@ export default new Vuex.Store({
                     newsDate: "25 December,2022 ",
                 },
             ],
+    tagsButtons: [
+      'Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planing'
+    ],
+
+    projectCat: [
+      'Bathroom', 'Bed Room', 'Kitchan', 'Living Area'
+    ],
+    ppGrid:[
+      {id: 1, img: "./img/pg1.jpg", name: 'Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 2, img: "./img/pg2.jpg", name: 'Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 3, img: "./img/pg3.jpg", name: 'Classic Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 4, img: "./img/pg4.jpg", name: 'Classic Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 5, img: "./img/pg5.jpg", name: 'Classic Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 6, img: "./img/pg6.jpg", name: 'Classic Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 7, img: "./img/pg7.jpg", name: 'Classic Minimal Bedroom', cat:'Decor / Artchitecture'},
+      {id: 8, img: "./img/pg8.jpg", name: 'Classic Minimal Bedroom', cat:'Decor / Artchitecture'},
+    ],
+
+    ppGridOdd:[],
+    ppGridEven:[]
+
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    SET_LEFTANDRIGHT(state){
+      state.ppGridEven =[];
+      state.ppGridOdd =[];
+      for (let index = 0; index < state.ppGrid.length; index++) {
+        if(index%2===0){
+          this.state.ppGridOdd.push(state.ppGrid[index])
+        } else{
+          this.state.ppGridEven.push(state.ppGrid[index])
+        }        
+      }
+    }
+  },
   actions: {},
   modules: {},
 });

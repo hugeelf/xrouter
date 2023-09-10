@@ -15,12 +15,12 @@
                 </p>
                 <div class="news-preview__wrap">
                     <p class="news-preview__date">{{ post.date }}</p>
-                    <button class="button_main">
+                    <router-link to="slider" class="button_main">
                         <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.27101 14.9525L7.21387 8.26683L1.27101 1.58112" stroke="#292F36" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                    </button>
+                    </router-link>
                 </div>
             </div>
         </div>
