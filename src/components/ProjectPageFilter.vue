@@ -1,14 +1,19 @@
 <template>
     <div class="project-cat center">
-        <button class="project-button" v-for="(cat, index) in projectCat" :key="index"> {{ cat }}</button>
+        <button class="project-button" 
+        v-for="(cat, index) in projectCat" 
+        :key="index"
+        @click="SET_FILTERCATEGORY(cat.filterCategory)"
+        > {{ cat.cat }}
+    </button>
     </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapMutations} from 'vuex';
 
 export default {
-    name: 'ProjectPageFilter',
+    name: 'PageFilter',
 
     data() {
         return {
@@ -21,10 +26,10 @@ export default {
     },
 
     methods: {
-        
+        ...mapMutations(['SET_FILTERCATEGORY'])
     },
     computed: {
-        ...mapState(['projectCat'])
+        ...mapState(['projectCat', 'filterCategory'])
     }
 };
 </script>

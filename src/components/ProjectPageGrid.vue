@@ -18,7 +18,7 @@
     </div> -->
     <div class="project-flex center">
         <div class="left">
-            <div class="left-item" v-for="project in ppGridOdd" :key="project.id">
+            <div class="left-item" v-for="project in leftSide" :key="project.id">
                 <img :src='project.img' alt="">
                 <div class="project__about">
                     <div class="about__info">
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="right">
-            <div class="right-item" v-for="project in ppGridEven" :key="project.id">
+            <div class="right-item" v-for="project in rightSide" :key="project.id">
                 <img :src='project.img' alt="">
                 <div class="project__about">
                     <div class="about__info">
@@ -55,14 +55,14 @@
 </template>
 
 <script>
-import { mapMutations, mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
-    name: 'ProjectPageGrid',
+    name: 'PageGrid',
 
     data() {
         return {
-
+            
         };
     },
 
@@ -70,14 +70,14 @@ export default {
 
     },
     created() {
-        this.SET_LEFTANDRIGHT();
+        
     },
 
     methods: {
-        ...mapMutations(['SET_LEFTANDRIGHT'])
+       
     },
     computed: {
-        ...mapState(['ppGrid', 'ppGridOdd', 'ppGridEven'])
+        ...mapGetters(['leftSide', 'rightSide'])
     }
 };
 </script>
